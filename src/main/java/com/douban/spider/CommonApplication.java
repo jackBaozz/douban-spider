@@ -1,4 +1,4 @@
-package com.douban.spider.common;
+package com.douban.spider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
