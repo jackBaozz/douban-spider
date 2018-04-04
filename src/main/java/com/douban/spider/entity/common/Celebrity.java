@@ -9,7 +9,7 @@ import lombok.extern.java.Log;
 import java.io.Serializable;
 
 @Data
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 @NoArgsConstructor
 @AllArgsConstructor
 @Log

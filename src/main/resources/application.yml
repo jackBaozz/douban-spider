@@ -1,0 +1,44 @@
+server:
+  port: 9090
+  session:
+    cookie:
+      name: APPSESSIONID-DOUBAN
+#  context-path: /app2
+spring:
+  application:
+    name: douban-spider
+  datasource:
+#    url: jdbc:mysql://10.5.51.43:3306/alan-oauth?characterEncoding=UTF-8
+#    username: root
+#    password: mysql
+#    driver-class-name: com.mysql.jdbc.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#  redis:
+#    host: 10.5.51.43
+#    database: 2
+#    password: redis
+
+##\u5F88\u91CD\u8981
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+
+
+
+eureka:
+  client:
+    serviceUrl:
+      #defaultZone: http://127.0.0.1:9101/eureka/,http://127.0.0.1:9102/eureka/,http://127.0.0.1:9103/eureka/
+      #defaultZone: http://localhost:9111/eureka
+      defaultZone: http://eureka.didispace.com/eureka/
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}:${spring.application.name}
