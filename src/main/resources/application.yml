@@ -20,7 +20,7 @@ spring:
 #    database: 2
 #    password: redis
 
-##\u5F88\u91CD\u8981
+
 security:
   oauth2:
     resource:
