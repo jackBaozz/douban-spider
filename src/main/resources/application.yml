@@ -20,7 +20,7 @@ spring:
 #    database: 2
 #    password: redis
 
-
+#安全授权的过滤器顺序
 security:
   oauth2:
     resource:

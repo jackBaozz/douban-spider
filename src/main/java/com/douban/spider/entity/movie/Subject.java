@@ -19,7 +19,7 @@ import java.io.Serializable;
 @Log
 public class Subject implements Serializable{
 
-    private String id;	//条目id
+    private String id;//条目id
     private String title;//中文名
     private String original_title;//原名
     private String[] aka;//又名
